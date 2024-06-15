@@ -1,39 +1,35 @@
-
-import Navbar from './header.jsx'
+import { useState } from 'react'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
 import './App.css'
-import './bootstrap.min.css'
-import '../js/bootstrap.bundle.min.js'
-import '../js/animated-headline.js'
-import '../js/click-scroll.js'
-import '../js/custom.js'
-import '../js/jquery.min.js'
-import '../js/jquery.sticky.js'
-
-import HeroSection from '../OverlaySection.jsx'
-import CarouselComponent from '../carousel.jsx'
-import AboutSection from '../section2.jsx'
-import EventsSection from '../section3.jsx'
-import ProjectComponent from '../project.jsx'
-import TodoApp from '../todolist.jsx'
-import Footer from './footer.jsx'
 
 function App() {
+  const [count, setCount] = useState(0)
 
   return (
     <>
-    
-      <div className='App'>
-        <Navbar/>
-        <HeroSection/>
-        <CarouselComponent/>
-        <AboutSection/>
-        <EventsSection/>
-        <ProjectComponent/>
-        <TodoApp/>
-        <Footer/>
+      <div>
+        <a href="https://vitejs.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
       </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
     </>
-  );
+  )
 }
 
 export default App

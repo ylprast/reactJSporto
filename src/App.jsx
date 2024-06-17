@@ -20,7 +20,7 @@ function App() {
 <BrowserRouter>
 
       <div className="container navbar-nav  ms-lg-auto">
-        <Nav fill variant="tabs" defaultActiveKey="/">
+        <Nav fill variant="tabs" defaultActiveKey=" ">
   <Nav.Item>
         <Nav.Link href="/" element={<HomePage />}>Home</Nav.Link>
       </Nav.Item>

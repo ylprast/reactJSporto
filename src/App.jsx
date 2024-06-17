@@ -18,26 +18,29 @@ function App() {
     <>
     <nav className="navbar" >
 <BrowserRouter>
+
       <div className="container navbar-nav  ms-lg-auto">
         <Nav fill variant="tabs" defaultActiveKey=" ">
-      <Nav.Item>
-        <Nav.Link href="/" element={<HomePage />}>Home</Nav.Link>
+        <ul>
+    <Nav.Item>
+        <Nav.Link to="/" element={<HomePage />}>Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="./pages/faq" element={<FAQPage />} >FAQ</Nav.Link>
+        <Nav.Link to="./pages/faq" element={<FAQPage />} >FAQ</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="./pages/about-us" element={<AboutUsPage />}>About Us</Nav.Link>
+        <Nav.Link to="./pages/about-us" element={<AboutUsPage />}>About Us</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="./pages/product-detail" element={<ProductPage />}>Product</Nav.Link>
+        <Nav.Link to="./pages/product-detail" element={<ProductPage />}>Product</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="./pages/register" element={<RegisterPage />}>Register</Nav.Link>
+        <Nav.Link to="./pages/register" element={<RegisterPage />}>Register</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="./pages/login" element={<LoginPage />}>Login</Nav.Link>
+        <Nav.Link to="./pages/login" element={<LoginPage />}>Login</Nav.Link>
       </Nav.Item>
+</ul>
     </Nav>
         <Routes>
           <Route path="/" element={<HomePage />} />

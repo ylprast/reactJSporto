@@ -1,35 +1,58 @@
 
-import { Routes, Route, BrowserRouter, Link } from "react-router-dom"
+import { Routes, Route, BrowserRouter } from "react-router-dom"
 import HomePage from "./pages/home"
-import KeranjangPage from "./pages/keranjang"
+import FAQPage from "./pages/faq"
 import ProductPage from "./pages/product"
 import AboutUsPage from "./pages/about-us"
+import RegisterPage from './pages/register';
+import LoginPage from './pages/login';
 import './App.css'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Nav from 'react-bootstrap/Nav';
+
+
 
 function App() {
 
   return (
     <>
+    <nav className="navbar" >
 <BrowserRouter>
-      <div>
-        <h1>Router Navigate</h1>
-        <nav>
-          <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/keranjang">Your Order</Link></li>
-            <li><Link to="/about-us">About Us</Link></li>
-          </ul>
-        </nav>
+      <div className="container navbar-nav  ms-lg-auto">
+        <Nav fill variant="tabs" defaultActiveKey=" ">
+      <Nav.Item>
+        <Nav.Link href="/" element={<HomePage />}>Home</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/faq" element={<FAQPage />} >FAQ</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/about-us" element={<AboutUsPage />}>About Us</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/product-detail" element={<ProductPage />}>Product</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/register" element={<RegisterPage />}>Register</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link href="/login" element={<LoginPage />}>Login</Nav.Link>
+      </Nav.Item>
+    </Nav>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/groceries" element={<KeranjangPage />} />
+          <Route path="/faq" element={<FAQPage />} />
           <Route path='/about-us' element={<AboutUsPage />}></Route>
           <Route path='/product-detail' element={<ProductPage />}></Route>
+          <Route path="/register" element={<RegisterPage />} />
+          <Route path="/login" element={<LoginPage />} />
         </Routes>
       </div>
     </BrowserRouter>
+    </nav>
     </>
   )
 }
+
 
 export default App

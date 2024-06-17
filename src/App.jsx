@@ -15,7 +15,6 @@ import Nav from 'react-bootstrap/Nav';
 function App() {
 
   return (
-    <>
     <nav className="navbar" >
 <BrowserRouter>
 
@@ -53,7 +52,6 @@ function App() {
       </div>
     </BrowserRouter>
     </nav>
-    </>
   )
 }
 

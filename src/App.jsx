@@ -42,11 +42,11 @@ function App() {
     </Nav>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/faq" element={<FAQPage />} />
-          <Route path="/about-us" element={<AboutUsPage />}></Route>
-          <Route path="/product-detail" element={<ProductPage />}></Route>
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path="/login" element={<LoginPage />} />
+          <Route path='/faq' element={<FAQPage />}></Route>
+          <Route path='/about-us' element={<AboutUsPage />}></Route>
+          <Route path='/product-detail' element={<ProductPage />}></Route>
+          <Route path='/register' element={<RegisterPage />}></Route>
+          <Route path='/login' element={<LoginPage />}></Route> 
         </Routes>
       </div>
     </BrowserRouter>

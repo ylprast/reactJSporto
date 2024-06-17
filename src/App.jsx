@@ -25,19 +25,19 @@ function App() {
         <Nav.Link href="/" element={<HomePage />}>Home</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="/" element={<FAQPage />} >FAQ</Nav.Link>
+        <Nav.Link href="/faq" element={<FAQPage />} >FAQ</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="/" element={<AboutUsPage />}>About Us</Nav.Link>
+        <Nav.Link href="/about-us" element={<AboutUsPage />}>About Us</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="/" element={<ProductPage />}>Product</Nav.Link>
+        <Nav.Link href="/product" element={<ProductPage />}>Product</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="/" element={<RegisterPage />}>Register</Nav.Link>
+        <Nav.Link href="/register" element={<RegisterPage />}>Register</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link href="/" element={<LoginPage />}>Login</Nav.Link>
+        <Nav.Link href="/login" element={<LoginPage />}>Login</Nav.Link>
       </Nav.Item>
     </Nav>
         <Routes>

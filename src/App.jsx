@@ -41,11 +41,11 @@ function App() {
     </Nav>
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/faq" element={<FAQPage />} />
-          <Route path='/about-us' element={<AboutUsPage />}></Route>
-          <Route path='/product-detail' element={<ProductPage />}></Route>
-          <Route path="/register" element={<RegisterPage />} />
-          <Route path="/login" element={<LoginPage />} />
+          <Route path="./pages/faq" element={<FAQPage />} />
+          <Route path="./pages/about-us" element={<AboutUsPage />}></Route>
+          <Route path="./pages/product-detail" element={<ProductPage />}></Route>
+          <Route path="./pages/register" element={<RegisterPage />} />
+          <Route path="./pages/login" element={<LoginPage />} />
         </Routes>
       </div>
     </BrowserRouter>
